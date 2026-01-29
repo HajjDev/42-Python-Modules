@@ -8,20 +8,20 @@
 #  By: cel-hajj <cel-hajj@student.42belgium.be   +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/01/28 15:10:58 by cel-hajj        #+#    #+#               #
-#  Updated: 2026/01/29 00:33:12 by cel-hajj        ###   ########.fr        #
+#  Updated: 2026/01/29 01:23:41 by cel-hajj        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
-# --- Main Plant Class ---
-class Plant:
+# --- Main SecurePlant Class ---
+class SecurePlant:
     """
-    This class represents an object that is a plant.
+    This class represents an object that is a secure plant.
     A plant can have many attributes, of wich a name, a height and an age.
     """
     def __init__(self, name: str, height: int, age: int) -> None:
         """
         The __init__ function initializes the Plant object with the following
-        attributes.
+        attributes using private variables.
         This function also checks the parameters value before assigning them.
 
         Args:
@@ -52,7 +52,7 @@ class Plant:
             print("Security: Negative height rejected")
         else:
             self.__height = height
-            print(f"height updated: {height} days [OK]")
+            print(f"height updated: {height}cm [OK]")
 
     def set_age(self, age: int) -> None:
         """
@@ -93,7 +93,7 @@ class Plant:
 if __name__ == "__main__":
     # --- Basic Tests ---
     print("=== Garden Security System ===")
-    rose = Plant("Rose", 25, 30)
+    rose = SecurePlant("Rose", 25, 30)
     print("")
     rose.set_height(-5)
     print(f"Current plant: {rose.name} ({rose.get_height()}cm, \
@@ -101,12 +101,12 @@ if __name__ == "__main__":
 
     # --- Additional Tests ---
 #     print("")
-#     tulipe = Plant("Tulipe", 13, 90)
+#     tulipe = SecurePlant("Tulipe", 13, 90)
 #     print("")
-#     rose.set_height(24)
-#     rose.set_age(-10)
+#     tulipe.set_height(24)
+#     tulipe.set_age(-10)
 #     print("")
-#     rose.set_age(20)
+#     tulipe.set_age(20)
 #     print("")
 #     print(f"Current plant: {tulipe.name} ({tulipe.get_height()}cm, \
 # {tulipe.get_age()} days)")
