@@ -5,10 +5,10 @@
 #                                                      :::      ::::::::    #
 #  ft_plant_factory.py                               :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
-#  By: cel-hajj <cel-hajj@student.42belgium.be   +#+  +:+       +#+         #
+#  By: cel-hajj <cel-hajj@student.s19.be>        +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/01/28 14:59:26 by cel-hajj        #+#    #+#               #
-#  Updated: 2026/01/29 00:33:16 by cel-hajj        ###   ########.fr        #
+#  Updated: 2026/01/29 16:36:53 by cel-hajj        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 

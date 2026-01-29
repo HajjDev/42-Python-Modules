@@ -5,10 +5,10 @@
 #                                                      :::      ::::::::    #
 #  ft_garden_intro.py                                :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
-#  By: cel-hajj <cel-hajj@student.42belgium.be   +#+  +:+       +#+         #
+#  By: cel-hajj <cel-hajj@student.s19.be>        +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/01/28 14:03:57 by cel-hajj        #+#    #+#               #
-#  Updated: 2026/01/29 01:23:10 by cel-hajj        ###   ########.fr        #
+#  Updated: 2026/01/29 16:36:50 by cel-hajj        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
