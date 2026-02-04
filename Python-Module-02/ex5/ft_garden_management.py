@@ -8,7 +8,7 @@
 #  By: cel-hajj <cel-hajj@student.s19.be>        +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/01/29 15:30:50 by cel-hajj        #+#    #+#               #
-#  Updated: 2026/01/29 16:29:11 by cel-hajj        ###   ########.fr        #
+#  Updated: 2026/01/30 16:59:43 by cel-hajj        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
@@ -174,7 +174,7 @@ Water level {plant.water_level} is too low (min 1)")
 Water level {plant.water_level} is too high (max 10)")
                 elif plant.sunlight_hours < 2 or plant.sunlight_hours > 12:
                     if plant.sunlight_hours < 0:
-                        raise ValueError("Error checking {plant.name}: \
+                        raise ValueError(f"Error checking {plant.name}: \
 Sunlight hours cannot be negative!")
                     elif plant.sunlight_hours < 1:
                         raise ValueError(f"Error checking {plant.name}: \
