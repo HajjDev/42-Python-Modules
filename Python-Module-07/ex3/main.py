@@ -8,7 +8,7 @@
 #  By: cel-hajj <cel-hajj@student.s19.be>        +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/02/18 08:03:56 by cel-hajj        #+#    #+#               #
-#  Updated: 2026/02/18 13:48:47 by cel-hajj        ###   ########.fr        #
+#  Updated: 2026/02/18 15:41:55 by cel-hajj        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
@@ -31,8 +31,9 @@ Strategy: AggressiveStrategy
 Available types: {factory.get_supported_types()}\n""")
 
     print("Simulating agressive turn...")
-    print(f"Hand: \
-{[f'{h.name} ({h.attack})' for h in factory.cards if h.type != 'artifacts']}")
+    hand = [f'{h.name} ({h.attack})'
+            for h in factory.cards if h.data_type != 'artifacts']
+    print(f"Hand: {hand}")
 
     print("""\nTurn execution:
 Strategy: AgressiveStrategy""")
