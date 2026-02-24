@@ -1,0 +1,15 @@
+[tool.poetry]
+name="loading"
+version="0.1.0"
+authors = ["cel-hajj <cel-hajj@student.42belgium.be>"]
+
+[tool.poetry.dependencies]
+python="^3.10"
+numpy="1.26.4"
+pandas="2.1.0"
+requests="2.31.0"
+matplotlib="3.7.2"
+
+[build-system]
+requires=["poetry-core"]
+build-backend="poetry.core.masonry.api"
