@@ -8,7 +8,7 @@
 #  By: cel-hajj <cel-hajj@student.s19.be>        +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/02/23 07:34:47 by cel-hajj        #+#    #+#               #
-#  Updated: 2026/02/24 20:22:52 by cel-hajj        ###   ########.fr        #
+#  Updated: 2026/02/25 12:10:35 by cel-hajj        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
@@ -67,6 +67,7 @@ Status: {"Operational" if space_station.is_operational else "Not Operational"}
             crew_size=21,
             power_level=85.5,
             oxygen_level=92.3,
+            last_maintenance="2024-02-24T10:30:00",
             is_operational=True,
             notes=None
         )

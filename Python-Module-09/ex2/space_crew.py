@@ -8,13 +8,12 @@
 #  By: cel-hajj <cel-hajj@student.s19.be>        +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/02/24 07:49:31 by cel-hajj        #+#    #+#               #
-#  Updated: 2026/02/24 20:33:46 by cel-hajj        ###   ########.fr        #
+#  Updated: 2026/02/25 12:13:05 by cel-hajj        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
 from datetime import datetime
 from enum import Enum
-from typing import Self
 from pydantic import BaseModel, Field, model_validator, ValidationError
 
 
@@ -61,7 +60,7 @@ class SpaceMission(BaseModel):
     budget_millions: float = Field(ge=1.0, le=10000.0)
 
     @model_validator(mode="after")
-    def validate_data(self) -> Self:
+    def validate_data(self):
         """
         This function validates the data given to the object on creation.
         To be a valid model, a SpaceMission must have an ID that starts

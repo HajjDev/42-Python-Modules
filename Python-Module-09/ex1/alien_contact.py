@@ -8,13 +8,13 @@
 #  By: cel-hajj <cel-hajj@student.s19.be>        +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/02/23 13:51:21 by cel-hajj        #+#    #+#               #
-#  Updated: 2026/02/24 20:31:56 by cel-hajj        ###   ########.fr        #
+#  Updated: 2026/02/25 12:12:55 by cel-hajj        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
 from datetime import datetime
 from enum import Enum
-from typing import Optional, Self
+from typing import Optional
 from pydantic import BaseModel, Field, model_validator, ValidationError
 
 
@@ -47,7 +47,7 @@ class AlienContact(BaseModel):
     is_verified:  bool = Field(default=False)
 
     @model_validator(mode='after')
-    def validate_data(self) -> Self:
+    def validate_data(self):
         """
         This function validates the data given to the object on creation.
         To be a valid model, an AlienContact must have an id that starts
